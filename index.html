@@ -138,11 +138,11 @@
                     <h3 class="h3 mb-3">O mnie</h3>
                     <p>
                         Witam, <br /> Nazywam się Krzysztof Handzlik.
-                        Z wykształcenia Automatyk obecnie programista .NET w firmie Nemak.
-                        W pracy łączę świat automatyki przemysłowej
-                        z aplikacjami opartymi o technologie Microsoft'u.
+                        Z wykształcenia inżynier automatyk obecnie programista .NET w firmie Nemak.
+                        W codziennej pracy łączę świat automatyki przemysłowej
+                        z aplikacjami opartymi o technologię Microsoft'u.
                         Prywatnie pasjonat IoT, elektroniki i mikrokontrolerów.
-                        W programowaniu uwielbiam możliwość ciągłego rozwoju i
+                        Programowanie jest moją pasją ze względu na możliwość ciągłego rozwoju i
                         podejmowania nowych wyzwań.
                     </p>
                 </div>
@@ -160,10 +160,10 @@
                                     <a href="#">Nemak Poland - Programista</a>
                                     <a href="#" class="float-right">6.2017 - obecnie</a>
                                     <p>
-                                        Tworzenie, dokumentowanie i wdrażanie aplikacji intranetowych w ASP.NET (Full-Stack),
+                                        Tworzenie, dokumentowanie i wdrażanie aplikacji intranetowych w ASP.NET (Full-Stack głównie MVC5, Entity Framework, JQuery, MDBootstrap),
                                         tworzenie i optymalizacja zapytań T-SQL, uruchamianie i utrzymywanie warstwy komunikacyjnej pomiędzy
-                                        maszynami i wewnętrznym systemem ERP, udział w projektach związanych z tworzeniem infrastruktury DataWarehouse,
-                                        pakietów integracyjnych SSIS, kostek analitycznych SSAS oraz wdrażanie koncepcji INDUSTRY 4.0 i analiz danych Big data
+                                        maszynami i wewnętrznym systemem ERP (Softing Echocollect, MQTT, OPCUA), udział w projektach związanych z tworzeniem infrastruktury DataWarehouse  
+										oraz wdrażanie koncepcji INDUSTRY 4.0 
 
                                     </p>
                                 </li>
@@ -500,7 +500,7 @@
 
                                 <div class="md-form">
                                     <i class="fas fa-pencil-alt prefix grey-text"></i>
-                                    <textarea type="text" name="message" class="md-textarea"></textarea>
+                                    <textarea type="text" name="message" class="md-textarea" required></textarea>
                                     <label for="message">Wiadomość</label>
                                 </div>
 
@@ -660,36 +660,6 @@
                             });
                         } // End if
                     });
-					
-					$('#sendMail').click(function(){
-						alert('email send');
-						
-						$.ajax({
-						  type: 'POST',
-						  url: 'https://mandrillapp.com/api/1.0/messages/send.json',
-						  data: {
-							'key': '6b384cafc6ce8d30c0b1cde08c32184b-us3',
-							'message': {
-							  'from_email': $('#form2').val(),
-							  'to': [
-								  {
-									'email': 'krzysztofhandzlik89@gmail.com',
-									'name': 'RECIPIENT NAME (OPTIONAL)',
-									'type': 'to'
-								  }
-								],
-							  'autotext': 'true',
-							  'subject': 'Contact from portfolio site',
-							  'html': $('#form8').val()
-							}
-						  }
-						 }).done(function(response) {
-						   console.log(response); 
-						 });
-					});
-					
-					
-					
                 });
             </script>
            
