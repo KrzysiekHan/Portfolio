@@ -1,0 +1,15 @@
+/**
+ * Polish
+ */
+
+{
+  "@metadata": {
+    "authors": [
+      "Alex"
+    ],
+    "last-updated": "2019-05-06",
+    "locale": "en",
+    "message-documentation": "qqq"
+  },
+  "welcome": "Welcome!"
+}
